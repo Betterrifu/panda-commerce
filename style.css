@@ -1,0 +1,56 @@
+.panda-bg-info{
+    background-color: #FCEAE8;
+}
+.panda-buyme-btn {
+    --color: #00A97F;
+    --color2: #212121;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1.5px solid var(--color);
+    transition: .5s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+   }
+   
+   .panda-buyme-btn::before {
+    content: '';
+    display: block;
+    height: 110%;
+    width: 310%;
+    transform: translate(0, -50%);
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    z-index: -1;
+    transition: .7s;
+    background: -moz-linear-gradient(45deg, var(--color2) 33%, var(--color) 66%);
+    background: -webkit-linear-gradient(45deg, var(--color2) 33%, var(--color) 66%);
+    background: linear-gradient(45deg, var(--color2) 33%, var(--color) 66%);
+   }
+   
+   .panda-buyme-btn:hover::before {
+    left: -200%;
+   }
+   
+   .panda-buyme-btn:hover {
+    color: var(--color2);
+   }
+   
+   .panda-buyme-btn:active {
+    transform: scale(.98);
+    filter: brightness(.8);
+   }
+   .price{
+       color: #0B7730;
+   }
+   .category img {
+    width: 100px;
+}
